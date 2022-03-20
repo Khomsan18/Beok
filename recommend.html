@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prompt">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บซื้อหนังสือ</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body style="font-family: Prompt;" background="picture/background/BG2.jpg">
+    <div class="topnav">
+        <a href="index.php"><b>หน้าแรก</b></a>
+        <a href="bestseller.html"><b>ขายดี</b></a>
+        <a href="new.html"><b>มาใหม่</b></a>
+        <a href="promotion.html"><b>โปรโมชั่น</b></a>
+        <a href="recommend.html"><b>แนะนำ</b></a>
+        <div class="dropdown">
+            <button class="dropbtn"><b>หมวดหมู่ <i class="arrow"></i></b></button>
+            <div class="dropdown-content">
+                <a href="love.html">นิยายรัก</a>
+                <a href="romand.html">นิยายโรมานซ์</a>
+                <a href="china.html">นิยายรักจีนโบราณ</a>
+                <a href="#">นิยายกำลังภายใน</a>
+                <a href="#">นิยายแฟนตาซี</a>
+                <a href="#">การ์ตูนทั่วไป</a>
+                <a href="#">การ์ตูนผู้หญิง</a>
+                <a href="#">พัฒนาตนเอง</a>
+        </div>
+        </div>
+
+        <div class="topnav-right">
+            <div class="dropdown">
+                <button class="dropbtn"><b>ผู้ใช้งาน <i class="arrow"></i></b></button>
+                <div class="dropdown-content">
+                    <a href="profile.html">จัดการข้อมูล</a>
+                    <a href="cart.php">ตะกร้าสินค้า</a>
+                    <a href="log_reg/login.php">ออกจากระบบ</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="centerSlide" style="max-width:500px" >
+            <img class="mySlides" src="picture/recommend/book_rec_1.gif" style="width:80%">
+            <img class="mySlides" src="picture/recommend/book_rec_2.gif" style="width:80%">
+            <img class="mySlides" src="picture/recommend/book_rec_3.gif" style="width:80%">
+            <img class="mySlides" src="picture/recommend/book_rec_4.gif" style="width:80%">
+            <img class="mySlides" src="picture/recommend/book_rec_5.gif" style="width:80%">
+        </div>
+        <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 3000); 
+            }
+        </script>
+        <h2><br>&nbsp;&nbsp;แนะนำ</h2>
+        <hr>
+        <div class="row">
+            <div class="column">
+                <div class="card" >
+                    <img src="picture/recommend/book_rec_1.gif"  alt="book" style="height:300px; width: 220px">
+                    <h2>โตเกียว รีเวนเจอร์ส</h2>
+                    <p class="price">฿49</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="picture/recommend/book_rec_2.gif"  alt="book" style="height:300px; width: 220px">
+                    <h2>เจาะเวลามาปั้นดาว</h2>
+                    <p class="price">฿72</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="picture/recommend/book_rec_3.gif"  alt="book" style="height:300px; width: 220px">
+                    <h2>กลลวงซ่อนตาย</h2>
+                    <p class="price">฿207</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="picture/recommend/book_rec_4.gif"  alt="book" style="height:300px; width: 220px">
+                    <h2>SoloLeviling</h2>
+                    <p class="price">฿269</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="picture/recommend/book_rec_5.gif"  alt="book" style="height:300px; width: 220px">
+                    <h2>จักรวรรดิเทียร์มูน</h2>
+                    <p class="price">฿305</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="picture/recommend/book_rec_6.gif"  alt="book" style="height:300px; width: 220px">
+                    <h2>คู่มือเงินทอง</h2>
+                    <p class="price">ฟรี</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="picture/recommend/book_rec_7.gif"  alt="book" style="height:300px; width: 220px">
+                    <h2>พ่อรวยสอนลูก</h2>
+                    <p class="price">฿190</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="picture/recommend/book_rec_8.gif"  alt="book" style="height:300px; width: 220px">
+                    <h2>มหาศึกคนชนเทพ</h2>
+                    <p class="price">฿129</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="picture/recommend/book_rec_9.gif"  alt="book" style="height:300px; width: 220px">
+                    <h2>พุทธศักราชอัสดง</h2>
+                    <p class="price">฿279</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="picture/recommend/book_rec_10.gif"  alt="book" style="height:300px; width: 220px">
+                    <h2>สิงโตนอกคอก</h2>
+                    <p class="price">฿249</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </div>
+        </div>
+            
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="picture/recommend/book_rec_11.gif"  alt="book" style="height:300px; width: 220px">
+                    <h2>ประวัติย่อมนุษยชาติ</h2>
+                    <p class="price">฿424</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="picture/recommend/book_rec_12.gif"  alt="book" style="height:300px; width: 220px">
+                    <h2>กินกบตัวนั้นซะ!</h2>
+                    <p class="price">฿136</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </div>
+        </div>
+
+        <br><div class="footer">
+            <br><h3>ผู้จัดทำ</h3>
+            <div style="opacity: 60%;">
+                Narawit Khomsan<br>
+                Pimnipa Srisamor<br>
+                Areeya Loedarayakun<br>
+                Nattharida Rasri<br>
+                Trin Nanant
+            </div><br>
+    </body>
+</html>
+    
+    

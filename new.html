@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prompt">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <title>เว็บซื้อหนังสือ</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body style="font-family: Prompt;" background = "picture/background/BG2.jpg">
+    <div class="topnav">
+        <a href="index.php"><b>หน้าแรก</b></a>
+        <a href="bestseller.html"><b>ขายดี</b></a>
+        <a class="active" href="new.html"><b>มาใหม่</b></a>
+        <a href="promotion.html"><b>โปรโมชั่น</b></a>
+        <a href="recommend.html"><b>แนะนำ</b></a>
+        <div class="dropdown">
+            <button class="dropbtn"><b>หมวดหมู่ <i class="arrow"></i></b></button>
+            <div class="dropdown-content">
+                <a href="love.html">นิยายรัก</a>
+                <a href="romand.html">นิยายโรมานซ์</a>
+                <a href="china.html">นิยายรักจีนโบราณ</a>
+                <a href="#">นิยายกำลังภายใน</a>
+                <a href="#">นิยายแฟนตาซี</a>
+                <a href="#">การ์ตูนทั่วไป</a>
+                <a href="#">การ์ตูนผู้หญิง</a>
+                <a href="#">พัฒนาตนเอง</a>
+        </div>
+        </div>
+        
+        <div class="topnav-right">
+            <div class="dropdown">
+                <button class="dropbtn"><b>ผู้ใช้งาน <i class="arrow"></i></b></button>
+                <div class="dropdown-content">
+                    <a href="profile.html">จัดการข้อมูล</a>
+                    <a href="cart.php">ตะกร้าสินค้า</a>
+                    <a href="log_reg/login.php">ออกจากระบบ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <div class="centerSlide" style="max-width:500px" >
+            <img class="mySlides" src="picture/new/new1.gif" style="width:80%">
+            <img class="mySlides" src="picture/new/new2.gif" style="width:80%">
+            <img class="mySlides" src="picture/new/new3.gif" style="width:80%">
+            <img class="mySlides" src="picture/new/new4.gif" style="width:80%">
+            <img class="mySlides" src="picture/new/new5.gif" style="width:80%">
+        </div>
+        <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 3000); 
+            }
+        </script>
+        <h2><br>&nbsp;&nbsp;มาใหม่</h2>
+        <hr>
+        <div class="row">
+            <div class="column">
+                <div class="card" >
+                    <a href="books/b3.html" target="_blank"><img src="picture/new/new1.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>ครั้งนี้…ฉันจะช่วยนายให้ได้</h2>
+                    <p class="price">฿59</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>    
+            <div class="column">    
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new2.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>Raam’ Crazy เธอคือของตาย</h2>
+                    <p class="price">฿300</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>    
+            <div class="column">        
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new3.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>WRONG รักที่ผิดพลาด #เชี่ยซัน</h2>
+                    <p class="price">฿239</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>    
+            <div class="column">        
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new4.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>เฟยหนี่ว์ ภรรยาผู้อัปลักษณ์</h2>
+                    <p class="price">฿69</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>    
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new5.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>อวิ๋นซีเหยา พิชิตใจพระรองอาภัพ</h2>
+                    <p class="price">฿365</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>         
+        </div>
+       
+        <h2><br>&nbsp;&nbsp;มาใหม่ในหมวดหมู่ นิยายรัก</h2>
+        <hr>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <a href="new1.html" target="_blank"><img src="picture/new/new6.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>Crazy about you</h2>
+                    <p class="price">฿299</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new7.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>Marry Project</h2>
+                    <p class="price">฿89</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new8.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>รักร้ายคุณชายปีศาจ</h2>
+                    <p class="price">฿59</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new9.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>เพื่อนสนิทคิด (ไม่) ซื่อ</h2>
+                    <p class="price">฿119</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new10.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>ชะตาพยศรัก</h2>
+                    <p class="price">฿365</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+            
+        <h2><br>&nbsp;&nbsp;มาใหม่ในหมวดหมู่ นิยายโรมานซ์</h2>
+        <hr>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new11.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>วิวาห์ชังคุณหมอร้าย</h2>
+                    <p class="price">฿99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new12.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>หัวใจอสูร</h2>
+                    <p class="price">฿244</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new13.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>รักร้อนๆ</h2>
+                    <p class="price">฿59</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new14.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>คู่หมั้นมาเฟีย</h2>
+                    <p class="price">฿149</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new15.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>ทาสรัก</h2>
+                    <p class="price">฿29</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+            
+        <h2><br>&nbsp;&nbsp;มาใหม่ในหมวดหมู่ นิยายรักจีนโบราณ</h2>
+        <hr>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new4.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>เฟยหนี่ว์</h2>
+                    <p class="price">฿69</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new5.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>อวิ๋นซีเหยา</h2>
+                    <p class="price">฿365</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new16.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>พลิกชะตานักฆ่าไร้ใจ</h2>
+                    <p class="price">฿229</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new17.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>ชายากำมะลอ 2</h2>
+                    <p class="price">฿29</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new18.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>คุณหนูสายหื่น</h2>
+                    <p class="price">ฟรี</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <h2><br>&nbsp;&nbsp;มาใหม่ในหมวดหมู่ นิยายกำลังภายใน</h2>
+        <hr>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new19.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>ราชาแห่งสวรรค์และปฐพี เล่ม 45</h2>
+                    <p class="price">฿170</p>
+                    <button>Add to Cart</button>
+                </div>   
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new20.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>ราชาแห่งสวรรค์และปฐพี เล่ม 45</h2>
+                    <p class="price">฿170</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new21.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>ระบบราชันเจ้าสำราญ เล่ม 13</h2>
+                    <p class="price">฿170</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new22.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>เคล็ดกายานวดารา เล่ม 36</h2>
+                    <p class="price">฿199</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new23.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>เทพสงครามสายเลือดมังกร เล่ม 22</h2>
+                    <p class="price">฿119</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <h2><br>&nbsp;&nbsp;มาใหม่ในหมวดหมู่ นิยายแฟนตาซี</h2>
+        <hr>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new1.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>ครั้งนี้…ฉันจะช่วยนายให้ได้</h2>
+                    <p class="price">฿59</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new24.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>เทพสายฟ้าราชาสงคราม เล่ม 87</h2>
+                    <p class="price">฿190</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new25.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>เทพสายฟ้าราชาสงคราม เล่ม 86</h2>
+                    <p class="price">฿190</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new26.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>เทพสายฟ้าราชาสงคราม เล่ม 85</h2>
+                    <p class="price">฿190</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new27.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>เทพสายฟ้าราชาสงคราม เล่ม 84</h2>
+                    <p class="price">฿190</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <h2><br>&nbsp;&nbsp;มาใหม่ในหมวดหมู่ การ์ตูนทั่วไป</h2>
+        <hr>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new28.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>ลูกแกะพันธุ์เสือ เค็นอิจิ เล่ม 61 (จบ)</h2>
+                    <p class="price">฿59</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new29.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>โคนัน ปฏิบัติการสายลับเดอะซีโร่ เล่ม 2</h2>
+                    <p class="price">฿69</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new30.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>โคนัน ปฏิบัติการสายลับเดอะซีโร่ เล่ม 1</h2>
+                    <p class="price">฿69</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new31.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>ชางหลันออนไลน์ เกมสะท้านพิภพ เล่ม 13</h2>
+                    <p class="price">฿59</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new32.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>โรงเรียนคุกนรก 28 (จบ)</h2>
+                    <p class="price">฿135</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <h2><br>&nbsp;&nbsp;มาใหม่ในหมวดหมู่ การ์ตูนผู้หญิง</h2>
+        <hr>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new33.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>หลงรักหนุ่มเจ้าปัญหา (รึเปล่า) ข้างห้อง</h2>
+                    <p class="price">฿45</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new34.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>เจ้าสาวมังกร The Dragon’s Bride 9</h2>
+                    <p class="price">฿68</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new35.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>เรื่องธรรมดาของโคอิโกะจัง 4</h2>
+                    <p class="price">฿68</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new36.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>เผลอใจรักกิ๊กกั๊กนายตัวแสบ 3</h2>
+                    <p class="price">฿68</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new37.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>นางมารร้ายกับนายราชา 5</h2>
+                    <p class="price">฿45</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <h2><br>&nbsp;&nbsp;มาใหม่ในหมวดหมู่ พัฒนาตนเอง</h2>
+        <hr>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new38.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>ดีท็อกซ์ ชีวิต</h2>
+                    <p class="price">฿59</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new39.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>10 คัมภีร์นักขาย</h2>
+                    <p class="price">฿829</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new40.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>เรื่องของหอย</h2>
+                    <p class="price">ฟรี</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new41.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>คาถาสะกดจิต 21 วัน</h2>
+                    <p class="price">฿399</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new42.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>พูดให้สำเร็จ </h2>
+                    <p class="price">฿172</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <h2><br>&nbsp;&nbsp;มาใหม่ในหมวดหมู่ บริหารจัดการ</h2>
+        <hr>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new43.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>ลดต้นทุนเพิ่มผลกำไร</h2>
+                    <p class="price">฿144</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new44.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>เทคนิคเสริมสร้าง</h2>
+                    <p class="price">฿152</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new45.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>ระบบสารสนเทศ</h2>
+                    <p class="price">฿150</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new46.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>ดันเว็บไซต์ให้เป็นที่ 1 </h2>
+                    <p class="price">฿325</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank"><img src="picture/new/new47.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>แนวคิดการจัดการ</h2>
+                    <p class="price">฿229</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+    </div>
+
+            <br><div class="footer">
+                <br><h3>ผู้จัดทำ</h3>
+                <div style="opacity: 60%;">
+                    Narawit Khomsan<br>
+                    Pimnipa Srisamor<br>
+                    Areeya Loedarayakun<br>
+                    Nattharida Rasri<br>
+                    Trin Nanant
+                </div><br>
+            </div>
+        
+    </body>
+</html>
+    
+    

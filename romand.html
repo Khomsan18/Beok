@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prompt">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บซื้อหนังสือ</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body  style="font-family: Prompt;" background = "picture/background/BG2.jpg">
+        <div class="topnav">
+            <a href="index.php"><b>หน้าแรก</b></a>
+            <a href="bestseller.html"><b>ขายดี</b></a>
+            <a href="new.html"><b>มาใหม่</b></a>
+            <a href="promotion.html"><b>โปรโมชั่น</b></a>
+            <a href="recommend.html"><b>แนะนำ</b></a>
+            <div class="dropdown">
+                <button class="dropbtn active"><b>หมวดหมู่ <i class="arrow"></i></b></button>
+                <div class="dropdown-content">
+                    <a href="love.html">นิยายรัก</a>
+                    <a href="romand.html">นิยายโรมานซ์</a>
+                    <a href="china.html">นิยายรักจีนโบราณ</a>
+                    <a href="#">นิยายกำลังภายใน</a>
+                    <a href="#">นิยายแฟนตาซี</a>
+                    <a href="#">การ์ตูนทั่วไป</a>
+                    <a href="#">การ์ตูนผู้หญิง</a>
+                    <a href="#">พัฒนาตนเอง</a>
+            </div>
+            </div>
+            
+            <div class="topnav-right">
+                <div class="dropdown">
+                    <button class="dropbtn"><b>ผู้ใช้งาน <i class="arrow"></i></b></button>
+                    <div class="dropdown-content">
+                        <a href="profile.html">จัดการข้อมูล</a>
+                        <a href="cart.php">ตะกร้าสินค้า</a>
+                        <a href="log_reg/login.php">ออกจากระบบ</a>
+                    </div>
+                </div>
+            </div>
+               
+            </div>
+        </div> 
+         
+        <div class="centerSlide" style="max-width:500px" >
+            <img class="mySlides" src="picture/romand/romand1.gif" style="width:80%">
+            <img class="mySlides" src="picture/romand/romand2.gif" style="width:80%">
+            <img class="mySlides" src="picture/romand/romand3.gif" style="width:80%">
+            <img class="mySlides" src="picture/romand/romand4.gif" style="width:80%">
+            <img class="mySlides" src="picture/romand/romand5.gif" style="width:80%">
+        </div>
+        <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 3000); 
+            }
+        </script>
+        <h2><br>&nbsp;&nbsp;นิยายโรมานซ์</h2>
+        <hr>
+        <div class="row">
+
+            <div class="column">
+                <div class="card" >
+                    <a href="#" target="_blank" ><img src="picture/romand/romand1.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>สุดเส้นแสงเงา</h2>
+                    <p class="price">฿340</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank" ><img src="picture/romand/romand2.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>สัญญารัก</h2>
+                    <p class="price">฿295</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank" ><img src="picture/romand/romand3.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>เพลงหัวใจ</h2>
+                    <p class="price">฿259</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank" ><img src="picture/romand/romand4.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>ในห้วง(รัก)ร้าย</h2>
+                    <p class="price">฿199</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank" ><img src="picture/romand/romand5.gif"  alt="book" style="height:300px; width: 220px"></a>
+                    <h2>ใจดำ</h2>
+                    <p class="price">฿104</p>
+                   <button>Add to Cart</button>
+                </div>
+            </div>
+            </div>
+
+        
+        <hr>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank" ><img src ="picture/romand/romand6.gif" alt="book" style= "height:300px; width: 220px"></a>
+                    <h2>พ่ายพันธกานต์ลวง </h2>
+                    <p class="price">฿270</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank" ><img src ="picture/romand/romand7.gif" alt="book" style= "height:300px; width: 220px"></a>
+                    <h2>เมียไร้เสน่หา</h2>
+                    <p class="price">฿359</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank" ><img src ="picture/romand/romand8.gif" alt="book" style= "height:300px; width: 220px"></a>
+                    <h2>กุหลาบในมือมาร</h2>
+                    <p class="price">฿239</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank" ><img src ="picture/romand/romand9.gif" alt="book" style= "height:300px; width: 220px"></a>
+                    <h2>เปลื้องรัก</h2>
+                    <p class="price">฿289</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank" ><img src ="picture/romand/romand10.gif" alt="book" style= "height:300px; width: 220px"></a>
+                    <h2>เมียบำเรออุ้มรัก</h2>
+                    <p class="price">฿249</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        
+        <hr>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank" ><img src ="picture/romand/romand11.gif" alt="book" style= "height:300px; width: 220px"></a>
+                    <h2>เมฆหวงดาว</h2>
+                    <p class="price">฿289</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank" ><img src ="picture/romand/romand12.gif" alt="book" style= "height:300px; width: 220px"></a>
+                    <h2>คืนหวานวันเสน่หา</h2>
+                    <p class="price">฿229</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank" ><img src ="picture/romand/romand13.gif" alt="book" style= "height:300px; width: 220px"></a>
+                    <h2>Xtreme Online </h2>
+                    <p class="price">฿165</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank" ><img src ="picture/romand/romand14.gif" alt="book" style= "height:300px; width: 220px"></a>
+                    <h2>ภรรยาเนื้ออ่อน</h2>
+                    <p class="price">฿279</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank" ><img src ="picture/romand/romand15.gif" alt="book" style= "height:300px; width: 220px"></a>
+                    <h2>My Young! เมียเด็ก</h2>
+                    <p class="price">฿199</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        
+        <hr>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank" ><img src ="picture/romand/romand16.gif" alt="book" style= "height:300px; width: 220px"></a>
+                    <h2>สรวงสวาท</h2>
+                    <p class="price">฿245</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank" ><img src ="picture/romand/romand17.gif" alt="book" style= "height:300px; width: 220px"></a>
+                    <h2>ใจก้องรัก</h2>
+                    <p class="price">฿269</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank" ><img src ="picture/romand/romand18.gif" alt="book" style= "height:300px; width: 220px"></a>
+                    <h2>คุณ (ว่าที่) สามี</h2>
+                    <p class="price">฿245</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank" ><img src ="picture/romand/romand19.gif" alt="book" style= "height:300px; width: 220px"></a>
+                    <h2>เพียงรักมหาศาล</h2>
+                    <p class="price">฿569</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <a href="#" target="_blank" ><img src ="picture/romand/romand20.gif" alt="book" style= "height:300px; width: 220px"></a>
+                    <h2>เมียนำโชค</h2>
+                    <p class="price">฿269</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <br><div class="footer">
+            <br><h3>ผู้จัดทำ</h3>
+            <div style="opacity: 60%;">
+                Narawit Khomsan<br>
+                Pimnipa Srisamor<br>
+                Areeya Loedarayakun<br>
+                Nattharida Rasri<br>
+                Trin Nanant
+            </div><br>
+        </div>
+    </body>
+</html>
